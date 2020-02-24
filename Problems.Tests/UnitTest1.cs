@@ -1,7 +1,6 @@
 using NUnit.Framework;
 using Problems;
 using System;
-using TestCaseData;
 
 namespace Problems.Tests
 {
@@ -28,14 +27,5 @@ namespace Problems.Tests
             Assert.That(ans3, Is.EqualTo("27,5:what    ...  did you say?? "));
         }
     }
-    /*public class MyDataClass
-    {
-        public static IEnumerable TestCases
-        {
-            get
-            {
-                yield return new TestCaseData("Hello")
-            }
-        }
-    }*/
+
 }
