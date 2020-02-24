@@ -1,7 +1,5 @@
 language: csharp
 dotnet: 3.1.101
-script: 
-  dotnet test SimpleTests
 matrix:
   Inculde:
     - dist: xenial
