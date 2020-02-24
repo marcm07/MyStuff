@@ -1,4 +1,6 @@
 using NUnit.Framework;
+using Problems;
+using System;
 
 namespace Problems.Tests
 {
@@ -7,12 +9,24 @@ namespace Problems.Tests
         [SetUp]
         public void Setup()
         {
+            
         }
 
         [Test]
-        public void Test1()
+        public static void Test1()
         {
-            Assert.Pass();
+            //ARANGE
+            
+            //ACT
+            string ans1 = Program.Prefix("Hello");
+            string ans2 = Program.Prefix("");
+            string ans3 = Program.Prefix("what    ...  did you say?? ");
+            //ASSERT
+            Assert.That(ans1, Is.EqualTo("5,1:hello"));
+            Assert.That(ans2, Is.EqualTo("null"));
+            Assert.That(ans3, Is.EqualTo("27,5:what    ...  did you say?? "));
         }
+
+
     }
 }

@@ -19,7 +19,7 @@ namespace Problems
 			int num_words = 0;
 			for (int k = 0; k<len;k++)
 			{
-				if (input[k] == ' ' && input[k-1] != ' ')
+				if (input[k] == ' ' && input[k-1] != ' ' && k != (len-1))
 					num_words++;
 				if (k == (len-1))
 					num_words = num_words+1;
